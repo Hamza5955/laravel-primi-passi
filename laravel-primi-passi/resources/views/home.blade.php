@@ -21,5 +21,6 @@
             <a href="{{  route('about') }}">about</a>
             <a href="{{  route('shop') }}">shop</a>
         </header>
+        {{$message}}
     </body>
 </html>
