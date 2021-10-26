@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -14,5 +15,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');;
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');;
+
+Route::get('/plan', function () {
+    return view('plan');
+})->name('plan');;
+
+Route::get('/services', function () {
+    return view('services');
+})->name('services');;
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shop');;
